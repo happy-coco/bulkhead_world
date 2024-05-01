@@ -1,0 +1,401 @@
+body {
+  max-width: 1200px;
+  margin: auto;
+  background: url("ocean.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*background-color: rgba(50, 50, 50, 0.5);*/
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 5px;
+}
+
+header {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  width: 100%;
+  /*position: fixed;
+  z-index: 1;*/
+}
+
+nav {
+  /*background-color: #333;*/
+  padding: 5px 5px;
+  margin-top: 0%;
+}
+
+nav li {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  display: inline-block;
+  width: auto;
+  margin: 0px 2px;
+  padding: 0px 5px;
+}
+
+nav li:hover {
+  color: #bbb;
+  transition: color .1s ease-in, background-color .1s ease-in;
+}
+
+nav ul .right {
+  float: right;
+}
+
+nav ul .right img {
+  width: 25px;
+}
+
+#current {
+  color: gray;
+}
+
+.banner {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+
+main {
+  text-align: center;
+  /*background-color: rgba(50, 50, 50, 0.5);*/
+  padding: 15px 15px 15px 15px;
+  max-width: 80%;
+  margin: auto;
+}
+
+main h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  padding-top: 0px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.action {
+  background-color: #333;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-justify: center;
+}
+
+.action:hover {
+  color: #333;
+  background-color: #fff ;
+  transition: color .1s ease-in, background-color .1s ease-in;
+}
+
+.action:active {
+  font-size: 19px;
+  transition: font-size .1s ease-in-out;
+}
+
+.about {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  margin: 10px 10px 10px 10px;
+  /*justify-content: center;*/
+}
+
+article {
+  color: #fff;
+  padding: 75px 25px 25px 25px;
+  /*background-color: rgba(50, 50, 50, 0.5);*/
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.col {
+  text-align: center;
+  display: grid;
+}
+
+#passion {
+  grid-column: 1 / span 2;
+}
+
+#strategy {
+  grid-column: 3 / span 2;
+}
+
+#transformation {
+  grid-column: 5 / span 2;
+}
+
+/*#skills {
+  display: grid;
+  grid-column: 1 / span 6;
+}*/
+
+.details {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  /*background-color: rgba(50, 50, 50, 0.5);*/
+}
+
+.details .col {
+  border: 1px solid #ffffff;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+  color: #fff;
+  justify-items: center;
+}
+
+.details .nocol {
+  /*border: 1px solid #ffffff;*/
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+  color: #fff;
+  justify-items: center;
+}
+
+.details h2 {
+  font-weight: 500;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.details p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.details a {
+  background-color: white;
+  color: #333333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #333333; 
+}
+
+footer {
+  /*background-color: #333;*/
+  color: #fff;
+  padding: 5px 0px;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  /*text-align: center;*/
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Intro ruleset */
+
+/*.details #approach {
+  padding-top: 75px;
+}*/
+
+/* Services ruleset */
+
+#professional {
+  grid-column: 1 / span 2;
+}
+
+#sports {
+  grid-column: 3 / span 2;
+}
+
+#international {
+  grid-column: 5 / span 2;
+}
+
+/* Meditations ruleset */ 
+
+/*article .post {
+  background-color: rgba(255, 255, 255, 1);
+}*/
+
+#learnings {
+  display: grid;
+  grid-column: 1 / span 6;
+}
+
+.value-props {
+  margin: 20px auto;
+  width: 60%;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.prop {
+  border: 1px solid #ffffff;
+  padding: 40px 0px;
+  margin: 5px 0px;
+  text-align: center;
+}
+
+.prop h2 {
+  font-size: 24px;
+}
+
+/* Contact ruleset */
+
+main h2 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  padding-top: 0px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.contact {
+  margin: 20px auto;
+  width: 75%;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Work in progress ruleset */
+
+main .work h1 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  padding-top: 55px;
+  margin-bottom: 90px;
+  text-transform: uppercase;
+  width: 75%S;
+}
+
+main .work p {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 40px auto;
+  width: 75%;
+  padding-top: 25px;
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 480px), (orientation: portrait) {
+  /*header {
+    text-align: center;
+  }*/
+  nav li {
+    font-size: 13.5px;
+    margin: 0px 0px;
+  }
+  /*main {
+    padding-top: 10px;
+  }*/
+  main h1 {
+    font-size: 50px;
+  }
+  nav ul .right img{
+    width: 22px;
+  }
+  article {
+    font-size: 14px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  main .work h1 {
+    font-size: 20px;
+  }
+  main .work p {
+    font-size: 15px;
+  }
+  .value-props {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 400px) {
+  nav li {
+    font-size: 10px;
+    margin: 0px 0px;
+  }
+  main h1 {
+    font-size: 40px;
+  }
+  nav ul .right img{
+    width: 20px;
+  }
+  article {
+    font-size: 12px;
+  }
+  .value-props {
+    width: 85%;
+  }
+} 
+
+
+/*@media only screen and (min-resolution: 100dpi) {
+  .logo {
+    background-image: url("../img/spaceship@2x.png");
+  }
+}
+
+@media only screen and (max-resolution: 150dpi) and (max-width: 480px) {
+  .page-description {
+  font-size: 20px; 
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .page-title, .page-description {
+    float: left;
+    width: 20em;
+  }
+  .page-description {
+    text-align: left;
+  }
+}*/
+
